@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script src="js/index.js"></script>
+
+    <script>
+        body_element = document.getElementsByName("body");
+        body_element.onload(window.alert("Alerta"));
+
+        document.getElementsByName('body').onload(window.alert('Hello World'));
+
+        function alerta_clique() {
+            window.alert("Alerta com Metodos")
+        }
+        
+    </script>
+</head>
+<body>
+    <main>
+        
+        <button type="button" onclick="window.alert('Cliquei no botão')")>
+            Alert
+        </button>
+
+        <button type="button" onclick="window.alerta_clique()">
+            Alert Method Interno
+        </button>
+
+        <button type="button" onclick="window.alerta_externo()">
+            Alert Method Externo
+        </button>
+
+
+    </main>
+    
+</body>
+</html>
